@@ -15,13 +15,13 @@ namespace WinFormsApp1
             string Firstname = textBox2.Text;
             string Middlename = textBox3.Text;
 
-            string month = comboBox1.GetItemText(comboBox1.SelectedIndex);
-            string day = comboBox2.GetItemText(comboBox2.SelectedIndex);
+            string day = comboBox1.GetItemText(comboBox1.SelectedIndex);
+            string month = comboBox2.GetItemText(comboBox2.SelectedIndex);
             string year = comboBox3.GetItemText(comboBox3.SelectedIndex);
 
             string Gender = radioButton1.Checked == true ? "Male" : "Female";
 
-            MessageBox.Show("Studet: " + Firstname + " " + Middlename + " " + Lastname + "\nGender: " + Gender + "\nDate Of Birth: " + month + "/" + day + "/" + year);
+            MessageBox.Show("Studet: " + Firstname + " " + Middlename + " " + Lastname + "\nGender: " + Gender + "\nDate Of Birth: " + day + "/" + month + "/" + year);
 
         }
 
